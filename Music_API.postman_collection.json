@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "7fb6f3d9-5b73-4f5f-b611-85e9adb13e5a",
+		"name": "Music_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23721979"
+	},
+	"item": [
+		{
+			"name": "Get_All_Songs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/music/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"music",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_Song_By_Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/music/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"music",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_Song",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"title\": \"Eat It\",\r\n        \"artist\": \"Weird Al\",\r\n        \"album\": \"Yankovic in 3-d\",\r\n        \"release_date\": \"1984-01-01\",\r\n        \"genre\": \"Parody\",\r\n        \"likes\": 250\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/music/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"music",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update_Song",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\":1,\r\n        \"title\": \"Eat It\",\r\n        \"artist\": \"Weird Al\",\r\n        \"album\": \"Yankovic in 3-d\",\r\n        \"release_date\": \"1984-01-01\",\r\n        \"genre\": \"Parody\",\r\n        \"likes\": 500000000\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/music/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"music",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update_Song Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\":1,\r\n        \"title\": \"Eat It\",\r\n        \"artist\": \"Weird Al\",\r\n        \"album\": \"Yankovic in 3-d\",\r\n        \"release_date\": \"1984-01-01\",\r\n        \"genre\": \"Parody\",\r\n        \"likes\": 500000000\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/music/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"music",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
