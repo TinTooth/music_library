@@ -7,7 +7,7 @@ from .serializer import SongSerializer
 # Create your views here.
 
 @api_view(['GET','POST'])
-def super_types_list(request):
+def songs_list(request):
     if request.method == 'GET':
         query_set = Song.objects.all()
         serializer = SongSerializer(query_set,many = True)
@@ -21,7 +21,7 @@ def super_types_list(request):
 
 
 @api_view(['GET','PUT','DELETE'])
-def super_type_detail(request,pk):
+def song_detail(request,pk):
     query = get_object_or_404(Song,pk = pk)
 
     if request.method == 'GET':
